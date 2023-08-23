@@ -4,8 +4,8 @@ var con=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'prajnagoswami',
-    database:'studentdb',
-    port:4000
+    database:'collegedb',
+   
    
 });
 con.connect((err)=>{
@@ -19,4 +19,4 @@ con.connect((err)=>{
     }
    
 })
-module.exports=con;
+module.exports.con=con;
